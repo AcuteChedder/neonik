@@ -28,6 +28,11 @@
 
 .header {
     margin-top: 30px;
+    z-index: 20;
+}
+
+.main {
+  z-index: 10;
 }
 
 .layout {

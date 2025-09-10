@@ -3,6 +3,7 @@
 <template>
   <main class="main">
     <div class="welcome">
+      <div class="circle"></div>
       <div class="welcome__block">
         <h1 class="welcome__block-title">
           создаём digital-проекты и игры, которые объединяют партнёров,
@@ -30,31 +31,34 @@
   gap: 20px;
 
   &__block {
-    background-image: url('/public/mainPageContent/1.png');
+    position: relative;
+    background-image: url("/public/mainPageContent/1.png");
     background-size: cover;
     background-position: center;
     height: 472px;
+    width: 100%;
     padding: 98px 88px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    z-index: 10;
 
     &-title {
-        font-family: "Inter", sans-serif;
-        font-weight: 500;
-        color: #fff;
-        background: none;
-        width: 565px;
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      color: #fff;
+      background: none;
+      width: 565px;
     }
 
     &-button {
-        border: none;
-        padding: 10px 16px;
-        border-radius: 30px;
-        width: 150px;
-        background-color: rgba(0, 247, 255, 1);
+      border: none;
+      padding: 10px 16px;
+      border-radius: 30px;
+      width: 150px;
+      background-color: rgba(0, 247, 255, 1);
     }
   }
 
@@ -64,9 +68,22 @@
     gap: 15px;
 
     &-img {
-        width: 235px;
-        height: 147px;
+      width: 235px;
+      height: 147px;
     }
   }
+}
+
+.circle {
+  position: absolute;
+  top: 0px;
+  left: 90px;
+  width: 350px;
+  height: 350px;
+  border-radius: 360px;
+  z-index: 5;
+
+  background: rgba(225, 0, 255, 0.3);
+  filter: blur(200.3px);
 }
 </style>
