@@ -45,8 +45,8 @@
 
     <div class="progress">
       <h1 class="progress__title">
-        За 12 месяцев мы выпустили 5 новых digital-продуктов, которые уже
-        используют десятки тысяч пользователей
+        За 12 месяцев мы выпустили 5 новых digital-<br>продуктов, которые уже
+        используют<br>десятки тысяч пользователей
       </h1>
       <div class="progress__block">
         <p class="progress__block-schema">3 года на рынке</p>
@@ -141,18 +141,23 @@
 
 .work {
   margin-top: 100px;
-  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__title {
     font-size: 25px;
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
+    z-index: 999;
+    background: none;
   }
 
   &__block {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
   }
 
   &__info {
@@ -194,14 +199,15 @@
 
 .progress {
   margin-top: 60px;
-
+  
   &__title {
     text-align: right;
     margin-left: auto;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
-    max-width: 540px;
+    max-width: 550px;
     color: #fff;
+    margin-bottom: 30px;
   }
 
   &__block {
@@ -218,12 +224,16 @@
       height: 150px;
       display: flex;
       align-items: center;
+      text-align: center;
+      justify-content: center;
     }
     &-schema:nth-child(2) {
       padding: 62px 36px;
       color: #fff;
       border: 1px solid #fff;
       border-radius: 20px;
+      width: 235px;
+      height: 176px;
       display: flex;
       align-items: center;
       text-align: center;
@@ -233,6 +243,8 @@
       color: #fff;
       border: 1px solid #fff;
       border-radius: 20px;
+      width: 235px;
+      height: 236px;
       display: flex;
       align-items: center;
       text-align: center;
@@ -242,6 +254,8 @@
       color: #fff;
       border: 1px solid #fff;
       border-radius: 20px;
+      width: 235px;
+      height: 302px;
       display: flex;
       align-items: center;
       text-align: center;
