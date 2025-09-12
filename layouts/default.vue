@@ -24,7 +24,6 @@
   padding: 0;
   box-sizing: border-box;
   background-color: rgba(21, 23, 24, 1);
-  font-family: "Inter", sans-serif;
 }
 
 .header {

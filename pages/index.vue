@@ -55,6 +55,14 @@
         <p class="progress__block-schema">50,000+ активных пользователей</p>
       </div>
     </div>
+
+    <div class="brochure">
+      <h1 class="brochure__title">Хотите узнать подробнее о наших результатах? Получите презентацию компании в 1 клик</h1>
+      <div class="brochure__download">
+        <input type="text" class="brochure__download-input" placeholder="Email">
+        <button class="brochure__download-btn">Скачать PDF</button>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -66,6 +74,7 @@
 .welcome {
   display: flex;
   justify-content: space-between;
+  font-family: "Inter", sans-serif;
   gap: 20px;
 
   &__block {
@@ -141,6 +150,7 @@
 
 .work {
   margin-top: 100px;
+  font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,6 +209,7 @@
 
 .progress {
   margin-top: 60px;
+  font-family: 'Manrope', sans-serif;
   
   &__title {
     text-align: right;
@@ -259,6 +270,36 @@
       display: flex;
       align-items: center;
       text-align: center;
+    }
+  }
+}
+
+.brochure {
+  padding-block: 64px;
+  font-family: 'Manrope', sans-serif;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-top: 100px;
+  padding-left: 85px;
+
+  &__title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 642px;
+  }
+
+  &__download {
+    display: flex;
+    gap: 20px;
+    margin-top: 34px;
+
+    &-input {
+      padding-block: 20px;
+      padding-left: 16px;
+      width: 405px;
+      border: 1px solid #fff;
+      border-radius: 20px;
     }
   }
 }
